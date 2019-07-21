@@ -73,7 +73,6 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday|
-    if holiday == :fourth_of_july || holiday == :memorial_day
     holiday.each do |day, things|
       if things == "BBQ"
         return day
